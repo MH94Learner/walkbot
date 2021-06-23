@@ -1,12 +1,3 @@
-"""
-Create the method avoid_obstacles within the WalkBot class which overrides the same method from the Robot class. 
-This method should call the superclass avoid_obstacles method if obstacle_found is True and the speed is less than or equal to 60, 
-otherwise rotate the robot by 90 degrees (adding 90 to the current direction) and set obstacle_found to False. 
-The direction should not be able to go above 360 degrees (use modulus in a similar way as the superclass method). 
-In either case, the speed and step_length of the WalkBot should be halved to ensure that the robot does not fall over when turning to avoid the obstacle
-"""
-
-
 class Robot:
     all_disabled = False
     latitude = -999999
@@ -79,9 +70,13 @@ print(robot_2.speed)
 print(robot_2.step_length)
 
 
-"""90
-75.0
-5.0
-180
-30.0
-20.0"""
+"""
+What did we do?
+
+Create the method avoid_obstacles within the WalkBot class which overrides the same method from the Robot class. 
+Call the superclass avoid_obstacles method if obstacle_found is True and the speed is less than or equal to 60, 
+else rotate the robot by 90 degrees and set obstacle_found to False. 
+The direction should not be able to go above 360 degrees. 
+The speed and step_length of the WalkBot should be halved to ensure that the robot does not fall over when turning to avoid the obstacle
+"""
+
